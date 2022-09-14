@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form making class</title>
+</head>
+<body style="background-color: rgb(254, 211, 231);">
+    <form action="" method="get">
+        <input type="hidden" name="id" value="123">
+        <!-- this is hidden attribute which wont be shown to viewer -->
+        <label style="background-color:rgb(166, 252, 252) ;" for="name">*First Name</label>
+        <input id="name" type="text" name=" first name" required placeholder="write your  first name" size="4">
+        <!-- required attribute  and placeholder for description of form input fpr user-->
+        <label style="background-color:rgb(187, 252, 252);" for="name">*Last name</label>
+        <input id="name" type="text" name="Last name" required placeholder="Write your last name">
+        <br>
+        <br>
+        <label style="background-color:rgb(255, 196, 0) ;" for="age">Age</label>
+        <input type="date" name="age" id="age">
+        <!-- input type date for age or calender -->
+        <br>
+        <br>
+        <label style="background-color:rgb(244, 163, 218) ;" for="number">Mobile No</label>
+        <input id="number" type="number" name="number" placeholder="write your number"  value="1234" maxlength="5">
+        <br>
+        <br>
+        <label style="background-color:rgb(235, 127, 181) ;" for="email">Email</label>
+        <input id="email" type="email" name="email" autocomplete="on" required>
+        <!-- input type email for email and autocomplete -->
+        <label style="background-color:rgb(48, 239, 45);"" for="password">password</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <button style="color:rgb(49, 7, 132) type="submit">Submit</button>
+        <br>
+        <p style="color:rgb(131, 163, 239) ;">Gender</p>
+        <label style="background-color:rgb(177, 244, 114) ;" for="male">Male</label>
+        <!-- radio input for chosing any one option like gender list-->
+        <input id="male" type="radio" name="gender" checked>
+        <label style="background-color:rgb(177, 244, 114) ;" for="female">female</label>
+        <input id="female" type="radio" name="gender">
+        <br>
+        <br>
+        <p style="background-color:rgb(249, 252, 72) ;" >Qualification</p>
+        <label for="qualification">SSC</label>
+        <input type="checkbox" id="SSC" name="qualification" name="SSC" checked>
+        <!-- checkbox input for making checklist and checked for marking any one  -->
+        <label for="qualification">HSC</label>
+        <input type="checkbox" id="HSC" name="qualification" name="HSC">
+        <label for="qualification">BSC</label>
+        <input type="checkbox" id="BSC" name="qualification" name="BSC">
+        <label for="qualification">MSC</label>
+        <input type="checkbox" id="MSC" name="qualification" name="MSC">
+        <br>
+        <br>
+        <P>EXtra curricular activity</P>
+        <select name="Extra curricular activity" id="ex_curri_act">
+            <!-- select tag for dropdown list and inside that write option tag -->
+            <option value="ex_curri_act" selected>select any from below</option>
+            <!-- write description in1st option tag -->
+            <option value="Music">Music</option>
+            <option value="art">Art</option>
+            <option value="Writing">Writing</option>
+            <option value="Recitetion">Recitetion</option>
+            <option value="Dance">Dance</option>
+        </select>
+        <br>
+       <button type="submit"> send</button>
+
+    </form>
+    <br>
+    <hr>
+    <!-- this assignment for class 5 -->
+    <h2 style="background-color:rgb(197, 179, 238) ;">this is the assignment of class5</h2>
+    <form action="" method="get">
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="write name" size="10"
+        <!-- size indicates the box space of name and its applicabke for abc -->
+        <br>
+        <label for="number">number</label>
+        <input type="text" name="number" placeholder="write number" value="01234" maxlength="11">
+        <!-- maxlength is user can give max number as developer allows -->
+        <br>
+        <label for="email">email</label>
+        <input type="email" placeholder="write email address" pattern="[A-Za-z]">
+        <!-- pattern tells us to follow the rules as developer gives like A-Z or a-z -->
+        <button type="submit">send</button>
+        <br>
+        <br>
+        <fieldset>
+            <legend >upload daily assignment</legend>
+            <!-- legend is used for giving name to fieldset -->
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="write name">
+            <label for="id number">ID</label>
+            <input type="text" name="id number" placeholder="write id number">
+            <label for="file">upload daily assignment</label>
+            <input type="file" name="file">
+        </fieldset>
+        <br>
+        <br>
+        <select name="Extra curricular activity" id="ex_curri_act">
+            <!-- select tag for dropdown list and inside that write option tag -->
+            <option value="ex_curri_act" selected>select any from below</option>
+            <!-- write description in1st option tag -->
+            <option value="Music">Music</option>
+            <option value="art">Art</option>
+            <option value="Writing">Writing</option>
+            <option value="Recitetion">Recitetion</option>
+            <option value="Dance">Dance</option>
+        </select>
+        <input list="class" name="class">
+        <datalist id="class">
+            <option value="nursery">nursery</option>
+            <option value="class1">class1</option>
+            <option value="class2">class2</option>
+            <option value="class3">class3</option>
+            <option value="class4">class4</option>
+        </datalist>
+        <button type="submit">send</button>
+    </form>
+</body>
+</html>
